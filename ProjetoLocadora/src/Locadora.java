@@ -22,4 +22,21 @@ public class Locadora {
         System.out.println("==============================");
 
     }
+    public  List<Veiculo> getFrota(){
+        return  frota;
+    }
+
+    public void aluguelVeiculo(int dias, int idVeiculo){
+        Veiculo veiculo = frota.get(idVeiculo - 1);
+        double total = veiculo.calcularDiaria() * dias;
+
+        System.out.println(" ====== Resumo do aluguel veiculo =======");
+        System.out.println("Veiculo: " + veiculo.exibirDados());
+        System.out.println("Quantidade de dias: " + dias);
+        System.out.printf("Valor diario: %.2f ", veiculo.calcularDiaria());
+        System.out.printf("\n Total do periodo da regencia: %.2f ", total);
+
+
+    }
+
 }

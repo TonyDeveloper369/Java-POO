@@ -46,6 +46,6 @@ abstract class Veiculo {
     }
 
     public String exibirDados() {
-        return marca + " " + modelo + " (" + ano + ")" +" " + placa  +" " + precoBase;
+        return marca + " " + modelo + " (" + ano + ")" +" " + placa  +" ";
     }
 }
